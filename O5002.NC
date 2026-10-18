@@ -1,0 +1,26 @@
+%
+O5002 (Bashmak (izm.1) 24.03 1)
+(Machine: IMV-12)
+(Programmer: Dmitry)
+(Date: 26-MAR-2023 Time: 18:44:40)
+
+( T03______Vylet:24 )
+
+G0 G91 G28 Z0
+G91 G28 X0 Y0
+G90 G17 G80 G40 G21
+
+T03 M6 ()
+(Perehod: D-Sverlenie1)
+G94 S1200 M3
+G54
+G0 G90 X21.5 Y-13.7
+G43 H3 Z25. M8
+G98 G83 Z-37 R-8 Q-3 K0.35 F100
+G80 M9
+M5
+G0 G28 G91 Z0
+G28 G91 X0 Y0
+G90
+M30
+%

@@ -1,0 +1,96 @@
+%
+O1234(ÑÔ-5012-2(ןאכוצ)2YSTANOVA)
+(Machine: YK-328DDY)
+(Programmer: User)
+(Date:31-MAY-2023 Time: 08:59:43)
+(Diametr stock: 16 mm)
+(Length stock: 65.1 mm)
+
+( T05___ )
+( T04___ )
+( T06___ )
+( T07___ )
+
+G90G40G80G13.1
+G0G28W0
+G0G28U0
+G54
+G18
+T0505 ()
+(Perehod: Podrezka torca)
+G50 S2000
+G99 G96 S190 M04
+M08
+G0 X-20. 
+Z2.1 
+   Z0. 
+   X-19.958 
+G1 X0.8 F0.1 
+   Z2. 
+G0 X-20. 
+M09
+M05
+G0G28W0
+G0G28U0
+M1
+
+G55
+G90G40G80G13.1
+G18
+T0404 ()
+(Perehod: Sverlenie 4.5)
+G99 G97 S1000 M03
+M08
+G0 X17. 
+Z2. 
+   X0. 
+G83 Z-28.762 Q3. F0.1 
+G80
+G0 X17. 
+M09
+M05
+G0G28W0
+G0G28U0
+M1
+
+G55
+G90G40G80G13.1
+G18
+T0606 ()
+(Perehod: Sverlenie 5.5)
+G99 G97 S300 M03
+M08
+G0 X17. 
+Z2. 
+   X0. 
+G83 Z-14.152 Q3. F0.05 
+G80
+G0 X17. 
+M09
+M05
+G0G28W0
+G0G28U0
+M1
+
+G55
+G90G40G80G13.1
+G18
+T0707 ()
+(Perehod: Rez`ba)
+G99 G97 S50 M03
+M08
+G0 X17. 
+Z2. 
+   X0. 
+   Z-10.5 
+M29  S50
+G84 Z-15.5 F0.8 
+G80
+G0 Z2. 
+   X17. 
+M9
+M5
+G0G28W0
+G0G28U0
+M30
+%
